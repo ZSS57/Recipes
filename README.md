@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='  ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/ZSS57/Recipes/blob/main/vedio_demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ...
 
