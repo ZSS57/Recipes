@@ -33,7 +33,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+When call ApI, no data showing up.
 
 ## License
 
