@@ -1,5 +1,6 @@
 /* App.css */
 .App {
+  background-color:pink;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -7,8 +8,8 @@
   min-height: 100vh;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%; /* full screen width */ 
+  margin: 20;
 }
 
 .recipe-list {
@@ -19,6 +20,8 @@
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+  text-align: center;
+
 }
 
 
@@ -27,6 +30,10 @@
   padding: 20px;
   width: 300px;
   text-align: left;
+  text-align: center;
+  margin: 0 auto;
+
+
 }
 
 .recipe-item img {
@@ -36,4 +43,28 @@
 
 .slider-container {
   margin: 20px;
+}
+
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stats-item {
+  background-color: darkpink;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(244, 135, 153);
+  font-size: large;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
