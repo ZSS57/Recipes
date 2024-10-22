@@ -108,7 +108,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const API_KEY = '80f0a9d4ba9e4af5a4f0673ca67f2ed1';
 const MIN_CARBS = 10;
 const MAX_CARBS = 1000;
 
@@ -122,7 +121,9 @@ const App = () => {
     const fetchRecipeData = async () => {
       try {
         const response = await fetch(
-          `https://api.spoonacular.com/recipes/findByNutrients?minCarbs=${MIN_CARBS}&maxCarbs=${MAX_CARBS}&apiKey=${API_KEY}`
+          // `https://api.spoonacular.com/recipes/findByNutrients?minCarbs=${MIN_CARBS}&maxCarbs=${MAX_CARBS}&apiKey=${API_KEY}`
+          `https://api.spoonacular.com/recipes/findByNutrients?minCarbs=${MIN_CARBS}&maxCarbs=${MAX_CARBS}&apiKey=${process.env.REACT_APP_API_KEY}`
+          
         );
         if (!response.ok) {
           throw new Error('Failed to fetch');
